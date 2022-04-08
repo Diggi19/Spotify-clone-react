@@ -1,0 +1,149 @@
+.main__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.main__body {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.main__menubar {
+  width: 45%;
+  height: 100%;
+  min-width: 200px;
+}
+@media (min-width: 500px) {
+  .main__menubar {
+    max-width: 270px;
+  }
+}
+.main__songs {
+  width: 90%;
+  height: 100%;
+}
+.main__footer {
+  width: 100%;
+  height: 14%;
+  position: fixed;
+  bottom: 0%;
+  background: linear-gradient(
+    rgb(44, 44, 44),
+    rgb(24, 24, 24),
+    rgb(24, 24, 24)
+  );
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  width: 20%;
+}
+.footer__right {
+  width: 30%;
+}
+.footer__left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__left img {
+  width: 500px;
+  height: 90%;
+  object-fit: contain;
+}
+.left__iconholder {
+  display: none;
+}
+.left__icons {
+  display: none;
+  color: grey;
+  margin-right: 0.5em;
+  transition: transform 200ms ease-in;
+  transform: scale(1);
+}
+.left__icons:hover {
+  cursor: pointer;
+}
+.footer__center {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icons {
+  color: grey;
+  margin: auto 0.5em auto 0.5em;
+  transition: transform 300ms ease-in;
+  transform: scale(1);
+}
+.footer__icons:hover {
+  cursor: pointer;
+}
+.footer__play {
+  transition: transform 200ms ease-in;
+  transform: scale(1.8) !important;
+}
+.footer__play:hover {
+  transform: scale(2);
+}
+.footer__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 40%;
+}
+.audiocontrol__container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerleft__content {
+  display: none;
+}
+
+.footerleft__content h4 {
+  margin-bottom: 0em;
+  color: white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.footerleft__content h4::-webkit-scrollbar {
+  display: none;
+}
+.footerleft__content h5 {
+  margin-top: 0.5em;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.footerleft__content h5::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 600px) {
+  .footer__left {
+    display: flex;
+    justify-content: left;
+  }
+  .left__iconholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerleft__content {
+    width: 50%;
+    margin-right: 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.MuiSlider-mark {
+  background-color: green;
+}

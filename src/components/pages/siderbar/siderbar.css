@@ -1,0 +1,65 @@
+.sidebar__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.sidebar__logo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0.1em;
+}
+.sidebar__navs {
+  width: 100%;
+  height: 20%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__playlist {
+  width: 100%;
+  height: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__playlist h4 {
+  text-align: left;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+.underline {
+  width: 90%;
+  margin: 0.1em auto auto auto;
+  height: 0.5px;
+  background-color: rgba(151, 150, 150, 0.541);
+}
+.sidebar__singles {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.sidebar__singles::-webkit-scrollbar {
+  display: none;
+}
+.sidebar__singles h5 {
+  margin-left: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+  margin-top: 0.9em;
+  color: grey;
+}
+.sidebar__singles h5:hover {
+  color: white;
+  cursor: pointer;
+}
